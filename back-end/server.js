@@ -29,6 +29,7 @@ if (isProduction) {
 
   // Servir arquivos estáticos da pasta dist do React
   app.use(express.static(path.join(__dirname, "../front-end/dist")));
+  app.use(express.static(path.join(__dirname, "../front-end/src/pages")));
 
   // Qualquer rota não reconhecida retorna index.html
   app.get("*", (req, res) => {

@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
 //import reactLogo from '/react.svg'
 //import viteLogo from '/vite.svg'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import '/src/styles/App.css'
+import Login from "../src/pages/login";
+// import Reserva from "../src/pages/reserva";
+// import Dashboard from "../src/pages/dashboard";
 
 
 function App() {
@@ -14,7 +18,18 @@ function App() {
       .catch(err => console.log(err));
   }, []);
 
-  return <div>{msg}</div>;
+  return (<div>  
+    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        {/* <Route path="/reserva" element={<Reserva />} />
+        <Route path="/dashboard" element={<Dashboard />} /> */}
+      </Routes>
+    </BrowserRouter> 
+  
+  </div>
+  )
 }
 
 
