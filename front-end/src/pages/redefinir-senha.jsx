@@ -1,21 +1,18 @@
 import React from 'react'
 
-function Cadastro() {
+function Redefinir_senha() {
   return (
     <div>
 
       <div class="left-content">
         <img src="../public/react.svg" alt="Logo" />
-        <h1>CADASTRO</h1>
+        <h1>Redefinição de senha</h1>
         <form id="login-form">
           <label htmlFor="email">Email</label>
           <input type="email" placeholder='exmplo@gmail.com' required/>
 
-          <label htmlFor="password">Senha</label>
-          <input type="password" placeholder='Senha' required/>
 
-          <button>Esqueci minha senha</button>
-          <button type="submit">Entrar</button>
+          <button>Enviar</button>
         </form>
       </div>
 
@@ -26,4 +23,4 @@ function Cadastro() {
 
   )
 }
-export default Cadastro
+export default Redefinir_senha
