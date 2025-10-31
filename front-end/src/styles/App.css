@@ -18,11 +18,18 @@ h1 {
   width: 100vw;
 }
 
+.logo {
+  height: 5rem;
+  display: flex;
+  position: absolute;
+  top: 4rem;
+}
+
 .left-content {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+ justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
 }
@@ -73,4 +80,9 @@ input {
   cursor: pointer;
   height: 6vh;
   width: 30vw;
+}
+
+.btn-primary img {
+  margin-left: 1rem;
+  vertical-align: middle;
 }

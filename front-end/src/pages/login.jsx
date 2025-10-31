@@ -1,9 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo-pina.png";
+import rightarrow from "../assets/icons/right-arrow.svg";
 
 function Login() {
-  //Função para navegar entre páginas do Login para Cadastro adicionando funcionalidade ao botão
+  //Função para navegar entre páginas
   const navigate = useNavigate();
   function irPara(rota) {
     navigate(rota);
@@ -12,7 +13,7 @@ function Login() {
   return (
     <div className="login-container">
       <div className="left-content">
-        <img src={logo} alt="Logo" />
+        <img className="logo" src={logo} alt="Logo" />
         <h1>Bem-vindo de volta!</h1>
 
         <form id="login-form" className="input-group">
@@ -34,7 +35,8 @@ function Login() {
           </div>
 
           <button className="btn-primary" type="submit">
-            Entrar
+            Entrar 
+            <img src={rightarrow} alt="" />
           </button>
         </form>
 
